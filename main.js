@@ -19,12 +19,12 @@ client.on("message", async (message) => {
 });
 client.on('clickButton', async (button) => {
     if (button.id === 'Button2') { // You must enter the button ID in the 'Button' sections.
-        if (button.clicker.member.roles.cache.get("Roles ID")) {
-            await button.clicker.member.roles.remove("Roles ID")
+        if (button.clicker.member.roles.cache.get("843501750248800257")) {
+            await button.clicker.member.roles.remove("843501750248800257")
             button.defer(true)
             await button.channel.send(`${button.clicker.user.tag} JavaScript Rolünü verdim!`).then(msg => { msg.delete({ timeout: 10000 }) }).catch(console.error);
         } else {
-            await button.clicker.member.roles.add("Roles ID")
+            await button.clicker.member.roles.add("843501750248800257")
             button.defer(true)
             await button.channel.send(`${button.clicker.user.tag} JavaScript Rolünü verdim!`).then(msg => { msg.delete({ timeout: 10000 }) }).catch(console.error);
         }
@@ -32,12 +32,12 @@ client.on('clickButton', async (button) => {
 });
 client.on('clickButton', async (button) => {
     if (button.id === 'Button3') { // You must enter the button ID in the 'Button' sections.
-        if (button.clicker.member.roles.cache.get("Roles ID")) {
-            await button.clicker.member.roles.remove("Roles ID")
+        if (button.clicker.member.roles.cache.get("843501844025180258")) {
+            await button.clicker.member.roles.remove("843501844025180258")
             button.defer(true)
             await button.channel.send(`${button.clicker.user.tag} The role was taken because you clicked the button.!`).then(msg => { msg.delete({ timeout: 10000 }) }).catch(console.error);
         } else {
-            await button.clicker.member.roles.add("Roles ID")
+            await button.clicker.member.roles.add("843501844025180258")
             button.defer(true)
             await button.channel.send(`${button.clicker.user.tag} Alt Yapı Rolünü verdim!`).then(msg => { msg.delete({ timeout: 10000 }) }).catch(console.error);
         }
@@ -45,12 +45,12 @@ client.on('clickButton', async (button) => {
 });
 client.on('clickButton', async (button) => {
     if (button.id === 'Button4') { // You must enter the button ID in the 'Button' sections.
-        if (button.clicker.member.roles.cache.get("Roles ID")) {
-            await button.clicker.member.roles.remove("Roles ID")
+        if (button.clicker.member.roles.cache.get("843501854067523594")) {
+            await button.clicker.member.roles.remove("843501854067523594")
             button.defer(true)
             await button.channel.send(`${button.clicker.user.tag} The role was taken because you clicked the button.!`).then(msg => { msg.delete({ timeout: 10000 }) }).catch(console.error);
         } else {
-            await button.clicker.member.roles.add("Roles ID")
+            await button.clicker.member.roles.add("843501854067523594")
             button.defer(true)
             await button.channel.send(`${button.clicker.user.tag} Linkler Rolünü verdim!`).then(msg => { msg.delete({ timeout: 10000 }) }).catch(console.error);
         }
