@@ -17,7 +17,6 @@ client.on("message", async (message) => {
 > <@&843501854067523594> Rolü almak için ( Linkler ) Tepkisine tıklayınız', { buttons: [buttons], [buttons2], [buttons3]});
     };
 });
-
 client.on('clickButton', async (button) => {
     if (button.id === 'Button2') { // You must enter the button ID in the 'Button' sections.
         if (button.clicker.member.roles.cache.get("Roles ID")) {
@@ -27,11 +26,10 @@ client.on('clickButton', async (button) => {
         } else {
             await button.clicker.member.roles.add("Roles ID")
             button.defer(true)
-            await button.channel.send(`${button.clicker.user.tag} The role was given because you clicked the button.`).then(msg => { msg.delete({ timeout: 10000 }) }).catch(console.error);
+            await button.channel.send(`${button.clicker.user.tag} JavaScript Rolünü verdim!`).then(msg => { msg.delete({ timeout: 10000 }) }).catch(console.error);
         }
     }
 });
-
 client.on('clickButton', async (button) => {
     if (button.id === 'Button3') { // You must enter the button ID in the 'Button' sections.
         if (button.clicker.member.roles.cache.get("Roles ID")) {
@@ -41,11 +39,10 @@ client.on('clickButton', async (button) => {
         } else {
             await button.clicker.member.roles.add("Roles ID")
             button.defer(true)
-            await button.channel.send(`${button.clicker.user.tag} The role was given because you clicked the button.`).then(msg => { msg.delete({ timeout: 10000 }) }).catch(console.error);
+            await button.channel.send(`${button.clicker.user.tag} Alt Yapı Rolünü verdim!`).then(msg => { msg.delete({ timeout: 10000 }) }).catch(console.error);
         }
     }
 });
-
 client.on('clickButton', async (button) => {
     if (button.id === 'Button4') { // You must enter the button ID in the 'Button' sections.
         if (button.clicker.member.roles.cache.get("Roles ID")) {
@@ -55,7 +52,7 @@ client.on('clickButton', async (button) => {
         } else {
             await button.clicker.member.roles.add("Roles ID")
             button.defer(true)
-            await button.channel.send(`${button.clicker.user.tag} The role was given because you clicked the button.`).then(msg => { msg.delete({ timeout: 10000 }) }).catch(console.error);
+            await button.channel.send(`${button.clicker.user.tag} Linkler Rolünü verdim!`).then(msg => { msg.delete({ timeout: 10000 }) }).catch(console.error);
         }
     }
 });
