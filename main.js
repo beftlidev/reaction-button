@@ -1,21 +1,31 @@
 client.on("message", async (message) => {
-    if (message.content == "ubb" && message.author.id === "753842258457002036") { // Use this command only once and only on one channel.
+    if (message.content == "-javascript" && message.author.id === "753842258457002036") { // Use this command only once and only on one channel.
     let buttons = new disbut.MessageButton()
         .setStyle('red') // Button Color
         .setLabel('JavaScript') // Button Name 
         .setID('Button2') // Button ID
+    message.channel.send('> <@&843501750248800257> Rolü Almak için ( JavaScript ) Butonuna tıklayınız.', { buttons: buttons});
+    };
+});
+
+client.on("message", async (message) => {
+    if (message.content == "-altyapı" && message.author.id === "753842258457002036") {
        let buttons2 = new disbut.MessageButton()
          .setStyle('blruple')
          .setLabel('Alt Yapı')
          .setID('Button3')
+message.channel.send(`> <@&843501844025180258> Rolü Almak için ( Alt Yapı ) Butonuna tıklayınız.`, { buttons: buttons2 }) 
+};
+});
+
+client.on("message", async (message) => {
+    if (message.content == "-linkler" && message.author.id === "753842258457002036") {
        let buttons3 = new disbut.MessageButton()
          .setStyle('green')
          .setLabel('Linkler')
          .setID('Button4')
-    message.channel.send('> <@&843501750248800257> Rolü Almak için ( JavaScript ) Tepkisine tıklayınız
-> <@&843501844025180258> Rolü Almak için ( Alt Yapı ) Tepkisine tıklayınız
-> <@&843501854067523594> Rolü almak için ( Linkler ) Tepkisine tıklayınız', { buttons: [buttons], [buttons2], [buttons3]});
-    };
+message.channel.send(`> <@&843501854067523594> Rolü almak için ( Linkler ) Butonuna tıklayınız.`, { buttons: buttons3 })
+};
 });
 client.on('clickButton', async (button) => {
     if (button.id === 'Button2') { // You must enter the button ID in the 'Button' sections.
